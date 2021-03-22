@@ -1,0 +1,8 @@
+#version 120
+varying vec3 fragmentColor;
+
+void main()
+{
+	// Output color = red
+	gl_FragColor = vec4(fragmentColor, 0.5);
+}
