@@ -33,7 +33,7 @@ int main( void )
 
 
 	// Open a window and create its OpenGL context
-	window = glfwCreateWindow( 1024, 768, "Tutorial 02 - Red triangle", NULL, NULL);
+	window = glfwCreateWindow( 1024, 768, "Task 1 - two triangles", NULL, NULL);
 	if( window == NULL ){
 		fprintf( stderr, "Failed to open GLFW window. If you have an Intel GPU, they are not 3.3 compatible. Try the 2.1 version of the tutorials.\n" );
 		getchar();
@@ -58,13 +58,13 @@ int main( void )
 
 	// Create and compile our GLSL program from the shaders
 	GLuint triang1 = LoadShaders(
-	        "/Users/s.perchuk/Desktop/workspace/Projects/OpenGLTutorials2.1/task1_triangles/SimpleTransform.vertexshader",
-	        "/Users/s.perchuk/Desktop/workspace/Projects/OpenGLTutorials2.1/task1_triangles/SingleColor.fragmentshader"
+	        "/Users/s.perchuk/Desktop/studies/Projects/OpenGLTutorials2.1/task1_triangles/SimpleTransform.vertexshader",
+	        "/Users/s.perchuk/Desktop/studies/Projects/OpenGLTutorials2.1/task1_triangles/SingleColor.fragmentshader"
     );
 
     GLuint triang2 = LoadShaders(
-            "/Users/s.perchuk/Desktop/workspace/Projects/OpenGLTutorials2.1/task1_triangles/SimpleTransform.vertexshader",
-            "/Users/s.perchuk/Desktop/workspace/Projects/OpenGLTutorials2.1/task1_triangles/SingleColor2.fragmentshader"
+            "/Users/s.perchuk/Desktop/studies/Projects/OpenGLTutorials2.1/task1_triangles/SimpleTransform.vertexshader",
+            "/Users/s.perchuk/Desktop/studies/Projects/OpenGLTutorials2.1/task1_triangles/SingleColor2.fragmentshader"
     );
 
 

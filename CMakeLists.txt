@@ -57,6 +57,9 @@ add_definitions(
 )
 
 # Task 1
+
+set(CMAKE_EXE_LINKER_FLAGS "-static-libstdc++")
+
 add_executable(task1_triangles
 		task1_triangles/triangles.cpp
 		common/shader.cpp
@@ -70,6 +73,9 @@ add_executable(task1_triangles
 target_link_libraries(task1_triangles
 		${ALL_LIBS}
 )
+
+#set_target_properties(task1_triangles PROPERTIES XCODE_ATTRIBUTE_CONFIGURATION_BUILD_DIR "${CMAKE_CURRENT_SOURCE_DIR}/task1_triangles/")
+#create_target_launcher(task1_triangles WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/task1_triangles/")
 
 #Task 2
 add_executable(task2_volumetric_figure

@@ -32,7 +32,7 @@ int main( void )
 
 
     // Open a window and create its OpenGL context
-    window = glfwCreateWindow( 1024, 768, "Tutorial 04 - Colored Cube", NULL, NULL);
+    window = glfwCreateWindow( 1024, 768, "Task 2 - volumetric figures", NULL, NULL);
     if( window == NULL ){
         fprintf( stderr, "Failed to open GLFW window. If you have an Intel GPU, they are not 3.3 compatible. Try the 2.1 version of the tutorials.\n" );
         getchar();
@@ -64,8 +64,8 @@ int main( void )
 
 
     GLuint programID = LoadShaders(
-            "/Users/s.perchuk/Desktop/workspace/Projects/OpenGLTutorials2.1/task2_volumetric_figure/TransformVertexShader.vertexshader",
-            "/Users/s.perchuk/Desktop/workspace/Projects/OpenGLTutorials2.1/task2_volumetric_figure/ColorFragmentShader.fragmentshader"
+            "/Users/s.perchuk/Desktop/studies/Projects/OpenGLTutorials2.1/task2_volumetric_figure/TransformVertexShader.vertexshader",
+            "/Users/s.perchuk/Desktop/studies/Projects/OpenGLTutorials2.1/task2_volumetric_figure/ColorFragmentShader.fragmentshader"
     );
 
     GLuint vertexPosition_modelspaceID = glGetAttribLocation(programID, "vertexPosition_modelspace");
@@ -145,8 +145,8 @@ int main( void )
 
 
     GLuint triangID = LoadShaders(
-            "/Users/s.perchuk/Desktop/workspace/Projects/OpenGLTutorials2.1/task2_volumetric_figure/TransformVertexShader.vertexshader",
-            "/Users/s.perchuk/Desktop/workspace/Projects/OpenGLTutorials2.1/task2_volumetric_figure/SingleColorOpaque.fragmentshader"
+            "/Users/s.perchuk/Desktop/studies/Projects/OpenGLTutorials2.1/task2_volumetric_figure/TransformVertexShader.vertexshader",
+            "/Users/s.perchuk/Desktop/studies/Projects/OpenGLTutorials2.1/task2_volumetric_figure/SingleColorOpaque.fragmentshader"
     );
 
     GLuint triang_vertexPosition = glGetAttribLocation(triangID, "vertexPosition_modelspace");
